@@ -1,0 +1,162 @@
+:root{
+    --main-shadow: 0px 3px 3px rgba(4, 4, 4, 0.3);
+    --main-baseColor: #6700EE;
+}
+
+
+
+/* ---------------
+HEADER
+--------------- */
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--main-baseColor);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--main-shadow);
+}
+.menuLogo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+}
+
+.Logo{
+    height: 70%;
+    width: 100%;
+    margin: auto 10px auto 10px;
+}
+
+.btnMenu{
+    margin: 20px 30px 20px 0px;
+    font-size: 27px;
+    color: white;
+}
+.btnLogin{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+}
+.login{
+    font-family: "Roboto","Ubuntu";
+    font-size: 18px;
+    color: white;
+    margin: 0 10px;
+
+}
+
+
+
+/* ---------------
+BANNER HOME
+--------------- */
+.contenedor{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.bannerHome{
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgHome{
+    border-radius: 20px;
+    box-shadow: var(--main-shadow);
+}
+
+.btnHome{
+    position: absolute;
+    margin-top: 230px;
+    background-color: var(--main-baseColor);
+    padding: 15px 35px;
+    font-family: "Roboto" , "Ubuntu";
+    font-size: 14px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: var(--main-shadow);
+}
+
+
+/* ---------------
+PRIMER TITULO
+--------------- */
+
+.tituloH1{
+    font-family: "Roboto", "Ubuntu";
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+    color: var(--main-baseColor);
+    text-shadow: var(--main-shadow);
+}
+
+.btnText{
+    background-color: var(--main-baseColor);
+    padding: 15px 35px;
+    font-family: "Roboto" , "Ubuntu";
+    font-size: 14px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: var(--main-shadow);
+    margin: auto;
+}
+
+.contText{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+    
+}
+
+.Text{
+    font-size: 14px;
+    color: #707070;
+    font-family: "Roboto" , "Ubuntu";
+    margin: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+
+}
+
+.contPantalla2{
+    background-color: #F0EEF2;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 70px;
+    padding-bottom: 70px;
+
+
+
+}
+
+/* ---------------
+CARROUSEL
+--------------- */
+
+
+.contCarrousel{
+    width: 50%;
+    margin: 50px auto;
+}
+.Carrousel{
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
