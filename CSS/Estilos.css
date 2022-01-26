@@ -4,21 +4,31 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-.container__all{
-    position: relative;
-    right: 0;
-    transition: all 400ms;
+
+:root {
+  --ColorPrimary: #9800ee;
+  --ColorSecondary: #e1d2f6;
+  --ColorTertiary: #373737;
+  --ColorHover: #8107c7;
+  --ShadowPrymary: 1px 1px 30px -5px #20202010;
+  --FontPrimary: "Poppins", "Sans-serif";
+  --FontSecondary: "Roboto", "Ubuntu";
+}
+
+.container__all {
+  position: relative;
+  right: 0;
+  transition: all 400ms;
 }
 
 header {
   width: 100%;
   height: 100px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--FontPrimary);
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
-
   transition: all 400ms;
 }
 
@@ -27,13 +37,13 @@ header {
 }
 
 .container__header {
-  max-width: 1200px;
+  width: 60%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
   padding: 0px 20px;
-  background-color: #FFFFFF90;;
+  background-color: #ffffff90;
 }
 
 header .logo {
@@ -64,25 +74,36 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0px 20px;
   list-style: none;
 }
 
-nav ul li a {
-  color: #373737;
+.buttonNav {
+  width: 40px;
+  height: 5px;
+  margin: 0 5px;
+  color: var(--ColorTertiary);
   font-size: 14px;
+  padding: 5px 15px;
 }
 
-.select {
-  background: #ca86f7;
-  padding: 10px 30px;
-  color: white;
-  border-radius: 20px;
+.buttonNav:hover {
+  color: var(--ColorPrimary);
+  transition: 300ms;
+  background-color: #e1d2f6;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.active {
+  color: var(--ColorPrimary);
+  /* font-weight: 600; */
+  background-color: #e1d2f6;
+  border-radius: 15px;
 }
 
 .nav_mod {
   height: 70px;
-  box-shadow: 1px 1px 10px 0px #00000010;
+  box-shadow: var (--ShadowPrymary);
   background: #ffffff;
 }
 
@@ -108,12 +129,17 @@ nav ul li a {
 .cover {
   width: 100%;
   padding-bottom: 60px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--FontPrimary);
   margin-top: 100px;
 }
 
+.containerGeneral {
+  max-width: 60%;
+  margin: 100px auto;
+}
+
 .container__cover {
-  max-width: 1200px;
+  max-width: 60%;
   margin: auto;
   padding: 20px;
   display: flex;
@@ -127,23 +153,23 @@ nav ul li a {
   z-index: 2;
 }
 
-.cover h1 {
+.tituloPortada1 {
   max-width: 400px;
   font-size: 60px;
   font-weight: 900;
-  color: #373737;
+  color: var(--ColorTertiary);
 }
 
-.cover h2 {
+.tituloPortada2 {
   font-size: 60px;
   font-weight: 900;
-  color: #e0b446;
+  color: var(--ColorPrimary);
   margin-top: -30px;
 }
 
 .cover p {
   margin-top: 10px;
-  color: #373737;
+  color: var(--ColorTertiary);
 }
 
 .cover input[type="button"] {
@@ -152,16 +178,19 @@ nav ul li a {
   font-size: 18px;
   font-weight: 600;
   border: none;
-  color: white;
-  background: #e0b446;
+  color: var(--ColorPrimary);
+  background: var(--ColorSecondary);
   border-radius: 20px;
-  box-shadow: 1px 1px 30px -5px #20202010;
+  box-shadow: var (--ShadowPrymary);
   cursor: pointer;
-  transition: box-shadow 500ms;
+  transition: box-shadow 300ms;
 }
 
 .cover input[type="button"]:hover {
-  box-shadow: 1px 1px 30px -5px #20202085;
+  box-shadow: var (--ShadowPrymary);
+  background-color: white;
+  border-color: var (--ColorHover);
+  border: 1px solid var(--ColorSecondary);
 }
 
 .container__vector {
@@ -189,12 +218,6 @@ nav ul li a {
 }
 
 
-@media screen and (max-width: 920){
-    
-    
-}
-
-
 
 @media screen and (max-width: 760px) {
   .container__nav {
@@ -205,11 +228,12 @@ nav ul li a {
 
   .btn__menu {
     display: flex;
+    z-index: 5;
   }
 
   nav {
     height: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     position: fixed;
     top: 0;
     right: -180px;
@@ -230,11 +254,6 @@ nav ul li a {
   }
 }
 
-:root {
-  --main-shadow: 0px 3px 3px rgba(4, 4, 4, 0.3);
-  --main-baseColor: #6700ee;
-}
-
 /* ---------------
 HEADER
 --------------- */
@@ -245,12 +264,12 @@ body {
 .header {
   width: 100%;
   height: 70px;
-  background-color: var(--main-baseColor);
+  background-color: var (--ColorSecondary);
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
-  box-shadow: var(--main-shadow);
+  box-shadow: var(--ShadowPrymary);
 }
 .menuLogo {
   display: flex;
@@ -277,7 +296,7 @@ body {
   right: 5%;
 }
 .login {
-  font-family: "Roboto", "Ubuntu";
+  font-family: var(--FontPrimary);
   font-size: 18px;
   color: white;
   margin: 0 10px;
@@ -287,33 +306,59 @@ body {
 BANNER HOME
 --------------- */
 .contenedor {
-  width: 50%;
+  width: 60%;
   margin: 50px auto;
   text-align: center;
 }
 
 .bannerHome {
-  border-radius: 10px;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
+  height: 300px;
+  overflow: hidden;
 }
 
 .imgHome {
-  border-radius: 20px;
-  box-shadow: var(--main-shadow);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: var(--ShadowPrymary);
+  border-radius: 10px;
+}
+
+.ContenedoBtnFrase {
+  display: block;
+  margin: 50px auto;
+  justify-content: center;
+  width: 90%;
+}
+
+.ContenedoBtnFrase h3 {
+  color: var (--ColorTertiary);
+  font-size: 20px;
+  font-weight: 300;
+  font-family: var(--FontPrimary);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fa-hand-point-down{
+  font-size: 30px;
+  color: var(--ColorTertiary);
+  text-shadow: var(--ShadowPrymary);
+  margin-bottom: 50px;
+  
 }
 
 .btnHome {
-  position: absolute;
-  margin-top: 230px;
-  background-color: var(--main-baseColor);
+  background-color: var(--ColorPrimary);
   padding: 15px 35px;
-  font-family: "Roboto", "Ubuntu";
+  font-family: var(--FontPrimary);
   font-size: 14px;
   color: white;
   border-radius: 15px;
-  box-shadow: var(--main-shadow);
+  box-shadow: var(--ShadowPrymary);
+  
 }
 
 /* ---------------
@@ -321,23 +366,24 @@ PRIMER TITULO
 --------------- */
 
 .tituloH1 {
-  font-family: "Roboto", "Ubuntu";
+  font-family: var(--FontPrimary);
   font-size: 25px;
   text-align: center;
   margin-top: 20px;
   font-weight: 400;
-  color: var(--main-baseColor);
-  text-shadow: var(--main-shadow);
+  color: var(--ColorPrimary);
+  text-shadow: var(--ShadowPrymary);
 }
 
 .btnText {
-  background-color: var(--main-baseColor);
+  background-color: var(--ColorSecondary);
   padding: 15px 35px;
-  font-family: "Roboto", "Ubuntu";
+  font-family: var(--FontPrimary);
   font-size: 14px;
-  color: white;
+  color: var(--ColorPrimary);
+  font-weight: 600;
   border-radius: 15px;
-  box-shadow: var(--main-shadow);
+  box-shadow: var(--ShadowPrymary);
   margin: auto;
 }
 
@@ -350,7 +396,7 @@ PRIMER TITULO
 .Text {
   font-size: 14px;
   color: #707070;
-  font-family: "Roboto", "Ubuntu";
+  font-family: var(--FontPrimary);
   margin: 15px;
   line-height: 1.6;
   font-size: 16px;
@@ -366,16 +412,78 @@ PRIMER TITULO
 }
 
 /* ---------------
+AGRUPADOR CARD
+--------------- */
+
+.AgrupadorCard {
+  display: flex;
+  margin-top: 50px;
+}
+
+.ContenedorCard {
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+}
+
+.ContenedorImg {
+  width: 100%;
+  min-width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ContenedorImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ---------------
 CARROUSEL
 --------------- */
 
 .contCarrousel {
-  width: 50%;
-  margin: 50px auto;
-}
-.Carrousel {
-  border-radius: 10px;
-  width: 100%;
+  width: 60%;
+  margin: 70px auto;
+  position: relative;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.imgCarroussel {
+  width: 100%;
+}
+
+.botones {
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #00000080;
+  color: #FFF;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.fa-angle-left{
+  margin-top: 10px;
+}
+
+.fa-angle-right{
+  margin-top: 10px;
+}
+
+.atras {
+  left: 5%;
+  margin-top: 10px;
+}
+
+.adelante {
+  right: 5%;
 }

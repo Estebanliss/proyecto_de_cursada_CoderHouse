@@ -14,66 +14,163 @@
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       data-auto-replace-svg
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./JS/Acciones.js"></script>
   </head>
 
   <body>
-    <!-- ----- HEADER ----- -->
-
     <header id="header"></header>
-    <main>
-      <div id="content"></div>
-      <div id="faqs"></div>
+    <main class="secciones container__all" id="contenidoWeb">
+      <section id="tab1">
+        <div>
+          <div class="cover">
+            <div class="container__cover">
+              <div class="container__info">
+                <h1 class="tituloPortada1">ARMA TU</h1>
+                <h2 class="tituloPortada2">FOTO LIBRO</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum ex odit rem quam nisi dignissimos dolor. Ratione
+                  officiis at exercitationem, suscipit consectetur tempore
+                  laboriosam quas quo eligendi, maiores excepturi ut.
+                </p>
+                <input type="button" value="Empezar" />
+              </div>
+              <div class="container__vector">
+                <img src="Imagenes/FotoHome.png" alt="Tus Fotos Libro" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contenedor">
+          <div class="bannerHome">
+            <img class="imgHome" src="./Imagenes/BannerHome3.jpg" alt="" />
+          </div>
+          <div class="ContenedoBtnFrase">
+            <h3>
+              Nacimientos, cumpleaños, bodas, vacaciones y viajes. Las fotos de los chicos, en el cole y de todos los días. Regalos especiales para el día de la madre, día del padre, aniversarios y San Valentín. Cada momento merece ser conservado en un fotolibro. Inspirate.
+            </h3>
+            <a class="btnHome">Quiero empezar</a>
+          </div>
+        </div>
+        
+        <div class="contenedor AgrupadorCard">
+          <div class="ContenedorCard">
+            <div class="ContenedorImg">
+            <img src="./Imagenes/Card2.jpg" alt="">
+            </div>
+            <h1 class="tituloH1">¿Qué es Tus Fotos a Libro?</h1>
+            <p class="Text">
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English. 
+            </p>
+            <br>
+            <a class="btnText">Quiero saber mas</a>
+          </div>
+        
+          <div class="ContenedorCard">
+            <div class="ContenedorImg">
+            <img src="./Imagenes/Card3.jpg" alt="">
+            </div>
+            <h1 class="tituloH1">¿Cómo lo puedo hacer?</h1>
+            <p class="Text">
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English. 
+            </p>
+            <br>
+            <a class="btnText">Quiero saber mas</a>
+          </div>
+        </div>
+        <div id="carrousel"></div>
+        
+      </section>
+
+      <section id="tab2">
+        <div class="cover">
+          <div class="containerGeneral">
+            <h1> Queremos ayudarte a resolver tus inquietudes <h1>
+            <div class="faqs">
+            <h3>¿Cómo  puedo empezar?</h3>
+            <p>It is a long established fact that a reader will be distracted
+            by the readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using 'Content
+            here, content here', making it look like readable English.</p>
+            </div>
+        
+            <div class="faqs">
+            <h3>¿Tiene algún costo?</h3>
+            <p>Many
+            desktop publishing packages and web page editors now use Lorem
+            Ipsum as their default model text, and a search for 'lorem
+            ipsum' will uncover many web sites still in their infancy.</p>
+            </div>
+        
+            <div class="faqs">
+            <h3>¿Qué tipo de imágenes debo usar?</h3>
+            <p>Various versions have evolved over the years, sometimes by
+            accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+        
+            <div class="faqs">
+            <h3>Consejos útiles para imprimir las imágenes</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley
+            of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.</p> 
+            </div> 
+        
+            <div class="ContenedoBtnFrase">
+              <h3>
+                Hoy podes empezar a crear tus mejores álbumes. <br> Sólo tenes que haces clic aquí!!! <br>
+              </h3>
+              <i class="far fa-hand-point-down"></i> 
+              <div>
+                <a class="btnHome">Empezar ahora mismo</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section id="tab3">
+        <div class="cover">
+          <div class="containerGeneral">
+            <h1> Esto es sección de Nosotros </h1>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab4">
+        <div class="cover">
+          <div class="containerGeneral">
+            <h1> Esto es sección de Contacto </h1>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-
-
     <script src="./JS/Header.js"></script>
-    <script src="./JS/pages/Home.js"></script>
-    <script src="./JS/pages/Faqs.js"></script>
+    <script src="JS/CarrouselHome.js"></script>
+    
+    
+    
+    <!-- <script src="./JS/pages/Home.js"></script> -->
     <!-- <script src="./JS/Login.js"></script> -->
+    <!-- <script src="./JS/pages/Faqs.js"></script> -->
+    <!-- <script src="./JS/pages/Nosotros.js"></script> -->
+    <!-- <script src="./JS/pages/Contacto.js"></script> -->
   </body>
   <footer></footer>
 </html>
-
-<!-- ----- BANNER HOME ----- -->
-<!-- <div class="contenedor">
-          <div class="bannerHome">
-            <img class="imgHome" src="BannerPrincipal1.jpg" alt="" />
-            <a class="btnHome">Quiero empezar</a>
-          </div>
-        </div> -->
-
-<!-- ----- PRIMER TÍTULO ----- -->
-
-<!-- <div class="contenedor">
-        <div class="contPantalla1">
-          <h1 class="tituloH1">¿Qué es Tus Fotos a Libro?</h1>
-          <div class="contText">
-            <p class="Text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-          <a class="btnText">Quiero empezar</a>
-        </div> -->
-
-<!-- ----- SEGUNDO TÍTULO ----- -->
-
-<!-- <div class="contPantalla2">
-          <h1 class="tituloH1">¿Cómo lo puedo hacer?</h1>
-          <div class="contText">
-            <p class="Text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-          <a class="btnText">Quiero empezar</a>
-        </div> -->
-
-<!-- ----- CARROUSEL ----- -->
-
-<!-- <div class="contCarrousel">
-          <div class="Carrousel">
-            <img src="./Imagenes/CH-1.png" alt="" /> -->
-<!-- <img src="./Imagenes/CH-2.png" alt="" />
-            <img src="./Imagenes/CH-3.png" alt="" /> -->
-<!-- </div>
-      <div>
-        <script></script>
-      </div> -->
