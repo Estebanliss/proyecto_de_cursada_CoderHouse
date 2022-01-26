@@ -1,8 +1,7 @@
-
-
-let faqs = document.createElement("div");
-faqs.innerHTML = `
-<div class="containerFaqs">
+const ContentFaqs = document.getElementById("Faqs");
+let Faqs = document.createElement("div");
+Faqs.innerHTML = `
+<div class="containerGeneral">
     <h1> Queremos ayudarte a resolver tus inquietudes <h1>
     <div class="faqs">
     <h3>¿Cómo  puedo empezar?</h3>
@@ -41,4 +40,4 @@ faqs.innerHTML = `
 </div>
 `;
 
-document.body.appendChild(faqs);
+document.body.appendChild(Faqs);
