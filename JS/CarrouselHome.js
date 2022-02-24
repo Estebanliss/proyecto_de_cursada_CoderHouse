@@ -1,17 +1,17 @@
-const CarrouselHome = document.getElementById("carrousel");
-let Carrousel = document.createElement("div");
-Carrousel.innerHTML = `
-<div class="contCarrousel">
-  <div class="atras botones" id="atras">
-    <i class="fas fa-angle-left"></i>
-  </div>
-  <img class="imgCarroussel" src="./Imagenes/CH-1.png" alt="" />
-  <div class="adelante botones" id="adelante">
-    <i class="fas fa-angle-right"></i>
-  </div>
-</div>`;
+const carrouselHome = document.getElementById("carrousel");
+let carrousel = document.createElement("div");
+carrousel.innerHTML = `
+  <div class="contCarrousel">
+    <div class="atras botones" id="atras">
+      <i class="fas fa-angle-left"></i>
+    </div>
+    <img class="imgCarroussel" src="./Imagenes/CH-1.png" alt="" />
+    <div class="adelante botones" id="adelante">
+      <i class="fas fa-angle-right"></i>
+    </div>
+  </div>`;
 
-document.body.appendChild(Carrousel);
+document.body.appendChild(carrousel);
 
 let imagenes = [
   "./Imagenes/CH-1.png",

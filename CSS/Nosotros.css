@@ -1,0 +1,21 @@
+.containerNosotros{
+    display: flex;
+    width: 100%
+}
+
+.nosotrosTituloParrafo{
+    width: 60%;
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+.nosotrosImagen{
+    width: 40%;
+}
+
+.nosotrosImagen img{
+    width: 400px;
+    height: 370px;
+    padding: 20px;
+}

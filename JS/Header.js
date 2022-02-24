@@ -15,6 +15,7 @@ Header.innerHTML = `
             <li><a href="#tab2" class="buttonNav">FAQS</a></li>
             <li><a href="#tab3" class="buttonNav">NOSOTROS</a></li>
             <li><a href="#tab4" class="buttonNav">CONTACTO</a></li>
+            <li><a href="#tab5" class="buttonNav">EMPEZAR</a></li>
           </ul>
         </nav>
         <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
@@ -53,7 +54,6 @@ window.addEventListener("resize", function () {
   }
 });
 
-
 $(document).ready(function(){
   $("ul.tabs li a:first").addClass("active");
   $(".secciones section").hide();
@@ -67,8 +67,7 @@ $(document).ready(function(){
       let activeTab = $(this).attr("href");
       $(activeTab).show();
       return false;
-
   })
-  
 });
+
   

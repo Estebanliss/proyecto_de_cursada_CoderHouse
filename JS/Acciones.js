@@ -1,24 +1,15 @@
+function previewFile() {
+  const preview = document.querySelector('img#Foto1 input[type="file"]');
+  const file = document.querySelector('input[type=file]').files[0];
+  const reader = new FileReader();
 
+  reader.addEventListener("load", function () {
+    // convierte la imagen a una cadena en base64
+    preview.src = reader.result;
+    console.log(reader)
+  }, false);
 
-
-
-
-// function ocultarContenido() {
-//   document.getElementsByName("ContentHome").style.display = "none";
-// };
-
-
-
-
-// // Acciones de botonera
-// document
-//   .getElementById("contenidoWeb")
-//   .addEventListener("show", ocultarContenido);
-
-
-
-// document.getElementsByName("btnHome").addEventListener("click" , mostrarHome);
-
-// function mostrarHome() {
-//   $("#home").hide();
-// }
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
