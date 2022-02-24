@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TusFotosaLibro</title>
+    <link rel="stylesheet" href="./CSS/Estilos.css" />
+    <link rel="stylesheet" href="./CSS/Faqs.css" />
+    <link rel="stylesheet" href="./CSS/Formulario.css" />
+    <link rel="stylesheet" href="./CSS/Nosotros.css" />
+    <link rel="stylesheet" href="./CSS/Configuration.css" />
+    <link rel="stylesheet" href="./CSS/Photos.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <!-- <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-replace-svg
+    ></script> -->
+    <script
+      src="https://kit.fontawesome.com/48a5975eb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="plantillavertical">
+      <img src="./Imagenes/Fondos-Dinos.png" alt="" />
+      <div class="containerFotos">
+        <!-- FOTO 1 -->
+        <div class="foto1 fotos">
+          <div class="containerSpan" id="span">
+            <span class="span"> <i class="fa-solid fa-camera"> </i></span>
+          </div>
+
+
+          <div class="inputFoto1">         
+            <input
+              type="file"
+              onchange="previewFile()"
+              id="inputFoto1"
+            /> <br>    
+            <div class="plantillaVerticalFoto1">
+              <img id="Foto1" src="" />
+            </div>       
+          </div>
+          
+          <!-- <div>
+            <form action="" method="post">
+              <input type="file" name="file" id="inputFoto1" accept=".jpg. .png, .jpge, .gif"> Onload </input>
+              <div id="preview" class="inputFoto1 styleImage"> 
+              </div>
+            </form>
+          </div>
+          <img src="./Imagenes/28.JPG" alt="" /> -->
+          <textarea class="inputFoto input1" name="textFoto1">
+          Escribe su historia</textarea
+          >
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="foto2 fotos">
+          <img src="./Imagenes/Foto2.jpg" alt="" />
+          <textarea class="inputFoto input2" name="textFoto1">
+          Escribe su historia</textarea
+          >
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="foto3 fotos">
+          <img src="./Imagenes/Foto3.jpg" alt="" />
+          <textarea class="inputFoto input3" name="textFoto1">
+          Escribe su historia</textarea
+          >
+        </div>
+
+        <!-- FOTO 4 -->
+        <div class="foto4 fotos">
+          <img src="./Imagenes/Foto4.jpg" alt="" />
+          <textarea class="inputFoto input4" name="textFoto1">
+          Escribe su historia</textarea
+          >
+        </div>
+      </div>
+    </div>
+    <script src="./JS/Acciones.js"></script>
+    <script src="./JS/Scripts.js"></script>
+  </body>
+</html>

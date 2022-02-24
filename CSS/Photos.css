@@ -1,0 +1,149 @@
+:root {
+  --ColorPrimary: #9800ee;
+  --ColorSecondary: #e1d2f6;
+  --ColorTertiary: #373737;
+  --ColorHover: #8107c7;
+  --ShadowPrymary: 1px 1px 30px -5px #20202010;
+  --ShadowSecondary: 1px 1px 30px -5px #20202080;
+  --FontPrimary: "Poppins", "Sans-serif";
+  --FontSecondary: "Roboto", "Ubuntu";
+}
+
+.plantillavertical {
+  width: 210mm;
+  height: 297mm;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+
+.fotos img {
+  width: 80mm;
+  height: 110mm;
+  position: absolute;
+  box-shadow: var(--ShadowSecondary);
+  border: white;
+  border-radius: 2mm;
+  border: 15px solid white;
+}
+
+.foto1 img {
+  left: 70px;
+  top: 70px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.foto2 img {
+  left: 400px;
+  top: 40px;
+  transform: rotate(-7deg);
+  object-fit: cover;
+  object-position: center;
+}
+
+.foto3 img {
+  left: 70px;
+  top: 575px;
+  transform: rotate(-3deg);
+  object-fit: cover;
+  object-position: center;
+}
+
+.foto4 img {
+  left: 424px;
+  top: 580px;
+  transform: rotate(3deg);
+  object-fit: cover;
+  object-position: center;
+}
+
+.inputFoto {
+  width: 80mm;
+  height: 10mm;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  font-family: var(--FontPrimary);
+  color: #373737;
+  font-weight: 650;
+}
+
+.input1 {
+  position: absolute;
+  left: 85px;
+  top: 520px;
+}
+
+.input2 {
+  position: absolute;
+  left: 443px;
+  top: 488px;
+  transform: rotate(-7deg);
+}
+
+.input3 {
+  position: absolute;
+  transform: rotate(-3deg);
+  left: 93px;
+  top: 1025px;
+}
+
+.input4 {
+  position: absolute;
+  top: 1030px;
+  left: 422px;
+  transform: rotate(3deg);
+}
+
+/* .styleImage {
+  width: 200px;
+  height: 200px;
+} */
+
+#inputFoto1 {
+  display: none;
+}
+
+.fa-camera {
+  display:flex;
+  font-size: 50px;
+  color: white;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.fa-camera:hover {
+  cursor: pointer;
+  color: #373737;
+}
+
+.containerSpan {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: aquamarine;
+  top: 85px;
+  left: 85px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.span{
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.plantillaVerticalFoto1{
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+  object-position: center;
+}

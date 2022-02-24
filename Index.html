@@ -7,6 +7,10 @@
     <title>TusFotosaLibro</title>
     <link rel="stylesheet" href="./CSS/Estilos.css" />
     <link rel="stylesheet" href="./CSS/Faqs.css" />
+    <link rel="stylesheet" href="./CSS/Formulario.css" />
+    <link rel="stylesheet" href="./CSS/Nosotros.css" />
+    <link rel="stylesheet" href="./CSS/Configuration.css" />
+    <link rel="stylesheet" href="./CSS/Photos.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
@@ -88,8 +92,12 @@
             <a class="btnText">Quiero saber mas</a>
           </div>
         </div>
-        <div id="carrousel"></div>
+        <div id="carrousel">
+
+        </div>
+          <!-- <script src="JS/CarrouselHome.js"></script> -->
         
+                
       </section>
 
       <section id="tab2">
@@ -139,14 +147,29 @@
               </div>
             </div>
           </div>
-          
         </div>
       </section>
       
       <section id="tab3">
         <div class="cover">
           <div class="containerGeneral">
-            <h1> Esto es sección de Nosotros </h1>
+            <h1> Nuestro objetivo </h1>
+            <div class="containerNosotros">
+              <div class="nosotrosTituloParrafo">
+                <h3>Que buscamos con "Tus Fotos a Libro?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, voluptates! Amet veniam, ipsa adipisci sit, itaque officia error blanditiis dolore, quidem modi assumenda numquam quibusdam! Sunt corporis ad nesciunt porro? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, voluptates! Amet veniam, ipsa adipisci sit, itaque officia error blanditiis dolore, quidem modi assumenda numquam quibusdam! Sunt corporis ad nesciunt porro?</p>
+                <input type="button" value="Empezar" />
+              </div>
+              <div class="nosotrosImagen">
+                <img src="Imagenes/Recuerdo1.jpg" alt="">
+              </div>
+            </div>
+            <div class="ContenedoBtnFrase">
+              <h3>
+                Todo momento especial, <br>vale la pena revivirlo dos veces. <br>
+              </h3>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -154,23 +177,88 @@
       <section id="tab4">
         <div class="cover">
           <div class="containerGeneral">
-            <h1> Esto es sección de Contacto </h1>
+            <h1> Dejanos tus inquietudes </h1>
+            <form class="formulario" action="/Formulario" method="post">
+              <ul class="form__ul">
+               <li class="form__li">
+                 <label class="form__label" for="name">Dinos tu nombre:</label>
+                 <input class="form__input" type="text" id="name" name="user_name">
+               </li>
+               <li class="form__li">
+                 <label class="form__label" for="mail">Coloca un email para que te respondamos:</label>
+                 <input class="form__input"  type="email" id="mail" name="user_mail">
+               </li>
+               <li class="form__li">
+                 <label class="form__label" for="msg">Dejanos tu consulta:</label>
+                 <textarea class="form__textarea" id="msg" name="user_message"></textarea>
+               </li>
+              </ul>
+
+              <div class="button">
+                <button type="submit">Envíe su mensaje</button>
+              </div>
+             </form>
           </div>
         </div>
       </section>
 
+      <section id="tab5">
+        <div class="cover">
+          <div class="containerGeneral tituloEmpezar">
+            <div class="configuration">
+              <h1>1. Seleccioná la orientación</h1>
+              <p>Aquí debes seleccionar la orientación de página.</p>
+              <div class="select">
+                <select id="formato" name="formato" action="" class="option" required>
+                  <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Vertical">Vertical</option>               
+                    <option value="Horizontal">Horizontal</option>
+                </select>
+              </div>
+            </div>
+            <div class="configuration">
+              <h1>2. Seleccioná la temática</h1>
+              <p>Selecciona el fondo de la página.</p>
+              <div class="select">
+                <select id="fondo" name="fondo" action="" class="option" required>
+                  <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Dinos">Dinos</option>
+                    <option value="Invierno">Invierno</option>  
+                    <option value="Baby">Baby</option>
+                    <option value="Playroom">Playroom</option>        
+                </select>
+              </div>
+            </div>
+            <div class="configuration">
+              <h1>3. Seleccioná la cantidad de fotos dentro de la pagina</h1>
+              <p>Aquí debes seleccionar la orientación de tu Foto Libro.</p>
+              <div class="select">
+                <select id="photo" name="photo" action="" class="option" required>
+                  <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Foto1">1 foto en pagina</option>
+                    <option value="Foto2">2 foto en pagina</option> 
+                    <option value="Foto3">3 foto en pagina</option>
+                    <option value="Foto4">4 foto en pagina</option>              
+                </select>
+              </div>
+              <br>
+              <div class="btnGeneral">
+                <button onclick="btnPaso2()" class="btnText">Ir al paso 2</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </section>
+
+      <section id=""tab6>
+       
+      </section>
     </main>
 
     <script src="./JS/Header.js"></script>
-    <script src="JS/CarrouselHome.js"></script>
-    
-    
-    
-    <!-- <script src="./JS/pages/Home.js"></script> -->
-    <!-- <script src="./JS/Login.js"></script> -->
-    <!-- <script src="./JS/pages/Faqs.js"></script> -->
-    <!-- <script src="./JS/pages/Nosotros.js"></script> -->
-    <!-- <script src="./JS/pages/Contacto.js"></script> -->
+    <script src="./JS/Plantilla.js"></script>
+    <script src="./JS/SubirImagenes.js"></script>
+
   </body>
   <footer></footer>
 </html>
