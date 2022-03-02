@@ -33,9 +33,7 @@
   position: absolute;
 }
 
-.fotos img {
-  width: 80mm;
-  height: 110mm;
+.fotos img{
   position: absolute;
   box-shadow: var(--ShadowSecondary);
   border: white;
@@ -44,14 +42,24 @@
   object-fit: cover;
 }
 
-.foto1 img {
+.fotosV img {
+  width: 80mm;
+  height: 110mm;
+}
+
+.fotosH img {
+  width: 170mm;
+  height: 115mm;
+}
+
+.fotoV1 img {
   left: 70px;
   top: 70px;
   object-fit: cover;
   object-position: center;
 }
 
-.foto2 img {
+.fotoV2 img {
   left: 400px;
   top: 40px;
   transform: rotate(-7deg);
@@ -59,7 +67,7 @@
   object-position: center;
 }
 
-.foto3 img {
+.fotoV3 img {
   left: 70px;
   top: 575px;
   transform: rotate(-3deg);
@@ -67,7 +75,15 @@
   object-position: center;
 }
 
-.foto4 img {
+.fotoH3 img {
+  left: 90px;
+  top: 503px;
+  transform: rotate(-7deg);
+  object-fit: cover;
+  object-position: center;
+}
+
+.fotoV4 img {
   left: 424px;
   top: 580px;
   transform: rotate(3deg);
@@ -106,6 +122,13 @@
   top: 1080px;
 }
 
+.inputH3 {
+  position: absolute;
+  transform: rotate(-7deg);
+  left: 140px;
+  top: 1048px;
+}
+
 .input4 {
   position: absolute;
   top: 1100px;
@@ -133,12 +156,19 @@
 
 .containerSpan {
   position: absolute;
-  width: 302px;
-  height: 415px;
   background: transparent;
   cursor: pointer;
   z-index: 10;
-  /* background: #9800ee; */
+}
+
+.containerSpanV {
+  width: 302px;
+  height: 415px;
+}
+
+.containerSpanH {
+  width: 637px;
+  height: 433px;
 }
 
 .span{
@@ -206,6 +236,12 @@ FOTO 1
   left: 83px;
   top: 649px;
   transform: rotate(-3deg);
+}
+
+.positionFotoH3{
+  left: 107px;
+  top: 572px;
+  transform: rotate(-7deg);
 }
 
 .positionFoto4{

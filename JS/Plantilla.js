@@ -28,5 +28,13 @@ function formatoPlantilla() {
 
 
 function exportar() {
-  document.getElementById("plantillaPaso2").contentWindow.print();
+  let inputFormato = document.querySelector("#formato").value;
+  let inputFondo = document.querySelector("#fondo").value;
+  let inputPhoto = document.querySelector("#photo").value;
+
+  if ((inputFormato === "") || (inputFondo === "") || (inputPhoto === "")) {
+    alert("Debe configurar correctamente todos los campos para avanzar");
+  } else {
+    document.getElementById("plantillaPaso2").contentWindow.print();
+  }
 }
