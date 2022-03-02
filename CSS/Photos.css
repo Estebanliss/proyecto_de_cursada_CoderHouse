@@ -9,12 +9,28 @@
   --FontSecondary: "Roboto", "Ubuntu";
 }
 
+/* .bodyPlantilla{
+  width: 100%;
+  height: auto;
+} */
+
 .plantillavertical {
-  width: 210mm;
-  height: 297mm;
+  width: 100%;
   display: flex;
   position: relative;
-  margin: auto;
+  margin: 0% !important;
+}
+
+.plantillavertical img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.containerFotos{
+  transform: scale(0.9);
+  height: auto;
+  position: absolute;
 }
 
 .fotos img {
@@ -25,6 +41,7 @@
   border: white;
   border-radius: 2mm;
   border: 15px solid white;
+  object-fit: cover;
 }
 
 .foto1 img {
@@ -86,64 +103,113 @@
   position: absolute;
   transform: rotate(-3deg);
   left: 93px;
-  top: 1025px;
+  top: 1080px;
 }
 
 .input4 {
   position: absolute;
-  top: 1030px;
+  top: 1100px;
   left: 422px;
   transform: rotate(3deg);
 }
 
-/* .styleImage {
-  width: 200px;
-  height: 200px;
-} */
+/* CONFIGURACIÓN GENERAL DE FOTOS */
 
 #inputFoto1 {
   display: none;
 }
 
-.fa-camera {
-  display:flex;
-  font-size: 50px;
-  color: white;
+#inputFoto2 {
+  display: none;
+}
+
+#inputFoto3 {
+  display: none;
+}
+
+#inputFoto4 {
+  display: none;
+}
+
+.containerSpan {
+  position: absolute;
+  width: 302px;
+  height: 415px;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+  /* background: #9800ee; */
+}
+
+.span{
+  position: absolute;
   margin: auto;
-  width: 200px;
-  height: 200px;
-  
+  width: 302px;
+  height: 415px;
+  /* border: 1px solid red; */
+}
+
+.fa-camera {
+  display:flex !important;
+  font-size: 50px;
+  color: silver;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  z-index: 1;
+  justify-content: center ;
+  align-items: center !important;
 }
 
 .fa-camera:hover {
   cursor: pointer;
   color: #373737;
-}
+  width: 100%;
+  height: 100%;
+} 
 
-.containerSpan {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: aquamarine;
-  top: 85px;
-  left: 85px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.span{
-  margin: auto;
-  text-align: center;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-
-.plantillaVerticalFoto1{
+.recorteFoto{
   position:absolute;
-  left: 0px;
-  top: 0px;
   object-fit: cover;
   object-position: center;
+}
+
+/* CONFIGURACIÓN POR FOTOS 
+
+FOTO 1
+*/
+
+.fotoVertical1{
+  left: 0px;
+  top: 0px;
+}
+
+.positionFoto1{
+  top: 85px;
+  left: 85px;
+}
+
+/* FOTO 2 */
+
+.fotoVertical2{
+  left: 0px;
+  top: 0px;
+}
+
+.positionFoto2{
+  left: 411px;
+  top: 54px;
+  transform: rotate(-7deg);
+}
+
+.positionFoto3{
+  left: 83px;
+  top: 649px;
+  transform: rotate(-3deg);
+}
+
+.positionFoto4{
+  left: 438px;
+  top: 669px;
+  transform: rotate(3deg);
 }
