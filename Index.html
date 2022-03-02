@@ -1,264 +1,287 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TusFotosaLibro</title>
-    <link rel="stylesheet" href="./CSS/Estilos.css" />
-    <link rel="stylesheet" href="./CSS/Faqs.css" />
-    <link rel="stylesheet" href="./CSS/Formulario.css" />
-    <link rel="stylesheet" href="./CSS/Nosotros.css" />
-    <link rel="stylesheet" href="./CSS/Configuration.css" />
-    <link rel="stylesheet" href="./CSS/Photos.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style>
-    <script
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      data-auto-replace-svg
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./JS/Acciones.js"></script>
-  </head>
 
-  <body>
-    <header id="header"></header>
-    <main class="secciones container__all" id="contenidoWeb">
-      <section id="tab1">
-        <div>
-          <div class="cover">
-            <div class="container__cover">
-              <div class="container__info">
-                <h1 class="tituloPortada1">ARMA TU</h1>
-                <h2 class="tituloPortada2">FOTO LIBRO</h2>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Harum ex odit rem quam nisi dignissimos dolor. Ratione
-                  officiis at exercitationem, suscipit consectetur tempore
-                  laboriosam quas quo eligendi, maiores excepturi ut.
-                </p>
-                <input type="button" value="Empezar" />
-              </div>
-              <div class="container__vector">
-                <img src="Imagenes/FotoHome.png" alt="Tus Fotos Libro" />
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="contenedor">
-          <div class="bannerHome">
-            <img class="imgHome" src="./Imagenes/BannerHome3.jpg" alt="" />
-          </div>
-          <div class="ContenedoBtnFrase">
-            <h3>
-              Nacimientos, cumpleaños, bodas, vacaciones y viajes. Las fotos de los chicos, en el cole y de todos los días. Regalos especiales para el día de la madre, día del padre, aniversarios y San Valentín. Cada momento merece ser conservado en un fotolibro. Inspirate.
-            </h3>
-            <a class="btnHome">Quiero empezar</a>
-          </div>
-        </div>
-        
-        <div class="contenedor AgrupadorCard">
-          <div class="ContenedorCard">
-            <div class="ContenedorImg">
-            <img src="./Imagenes/Card2.jpg" alt="">
-            </div>
-            <h1 class="tituloH1">¿Qué es Tus Fotos a Libro?</h1>
-            <p class="Text">
-              It is a long established fact that a reader will be distracted
-              by the readable content of a page when looking at its layout.
-              The point of using Lorem Ipsum is that it has a more-or-less
-              normal distribution of letters, as opposed to using 'Content
-              here, content here', making it look like readable English. 
-            </p>
-            <br>
-            <a class="btnText">Quiero saber mas</a>
-          </div>
-        
-          <div class="ContenedorCard">
-            <div class="ContenedorImg">
-            <img src="./Imagenes/Card3.jpg" alt="">
-            </div>
-            <h1 class="tituloH1">¿Cómo lo puedo hacer?</h1>
-            <p class="Text">
-              It is a long established fact that a reader will be distracted
-              by the readable content of a page when looking at its layout.
-              The point of using Lorem Ipsum is that it has a more-or-less
-              normal distribution of letters, as opposed to using 'Content
-              here, content here', making it look like readable English. 
-            </p>
-            <br>
-            <a class="btnText">Quiero saber mas</a>
-          </div>
-        </div>
-        <div id="carrousel">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TusFotosaLibro</title>
+  <link rel="icon" href="data:;base64,=">
+  <link rel="stylesheet" href="./CSS/Estilos.css" />
+  <link rel="stylesheet" href="./CSS/Faqs.css" />
+  <link rel="stylesheet" href="./CSS/Formulario.css" />
+  <link rel="stylesheet" href="./CSS/Nosotros.css" />
+  <link rel="stylesheet" href="./CSS/Configuration.css" />
+  <link rel="stylesheet" href="./CSS/Photos.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./JS/Acciones.js"></script>
+</head>
 
-        </div>
-          <!-- <script src="JS/CarrouselHome.js"></script> -->
-        
-                
-      </section>
-
-      <section id="tab2">
+<body>
+  <header id="header"></header>
+  <main class="secciones container__all" id="contenidoWeb">
+    <section id="tab1">
+      <div>
         <div class="cover">
-          <div class="containerGeneral">
-            <h1> Queremos ayudarte a resolver tus inquietudes <h1>
-            <div class="faqs">
-            <h3>¿Cómo  puedo empezar?</h3>
-            <p>It is a long established fact that a reader will be distracted
+          <div class="container__cover">
+            <div class="container__info">
+              <h1 class="tituloPortada1">ARMA TU</h1>
+              <h2 class="tituloPortada2">FOTO LIBRO</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Harum ex odit rem quam nisi dignissimos dolor. Ratione
+                officiis at exercitationem, suscipit consectetur tempore
+                laboriosam quas quo eligendi, maiores excepturi ut.
+              </p>
+              <button class="button1" type="button" value="Empezar">Empezar ahora</button>
+            </div>
+            <div class="container__vector">
+              <img src="Imagenes/FotoHome.png" alt="Tus Fotos Libro" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="bannerHome">
+          <img class="imgHome" src="./Imagenes/BannerHome3.jpg" alt="" />
+        </div>
+        <div class="ContenedoBtnFrase">
+          <h3>
+            Nacimientos, cumpleaños, bodas, vacaciones y viajes. Las fotos de los chicos, en el cole y de todos los
+            días. Regalos especiales para el día de la madre, día del padre, aniversarios y San Valentín. Cada momento
+            merece ser conservado en un fotolibro. Inspirate.
+          </h3>
+          <button class="btnHome button1">Quiero empezar</button>
+        </div>
+      </div>
+
+      <div class="contenedor AgrupadorCard">
+        <div class="ContenedorCard">
+          <div class="ContenedorImg">
+            <img src="./Imagenes/Card2.jpg" alt="">
+          </div>
+          <h1 class="tituloH1">¿Qué es Tus Fotos a Libro?</h1>
+          <p class="Text">
+            It is a long established fact that a reader will be distracted
             by the readable content of a page when looking at its layout.
             The point of using Lorem Ipsum is that it has a more-or-less
             normal distribution of letters, as opposed to using 'Content
-            here, content here', making it look like readable English.</p>
-            </div>
-        
-            <div class="faqs">
-            <h3>¿Tiene algún costo?</h3>
-            <p>Many
-            desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem
-            ipsum' will uncover many web sites still in their infancy.</p>
-            </div>
-        
-            <div class="faqs">
-            <h3>¿Qué tipo de imágenes debo usar?</h3>
-            <p>Various versions have evolved over the years, sometimes by
-            accident, sometimes on purpose (injected humour and the like).</p>
-            </div>
-        
-            <div class="faqs">
-            <h3>Consejos útiles para imprimir las imágenes</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text ever since the 1500s, when an unknown printer took a galley
-            of type and scrambled it to make a type specimen book. It has
-            survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.</p> 
-            </div> 
-        
-            <div class="ContenedoBtnFrase">
-              <h3>
-                Hoy podes empezar a crear tus mejores álbumes. <br> Sólo tenes que haces clic aquí!!! <br>
-              </h3>
-              <i class="far fa-hand-point-down"></i> 
-              <div>
-                <a class="btnHome">Empezar ahora mismo</a>
+            here, content here', making it look like readable English.
+          </p>
+          <br>
+          <button class="btnText button2">Quiero saber mas</button>
+        </div>
+
+        <div class="ContenedorCard">
+          <div class="ContenedorImg">
+            <img src="./Imagenes/Card3.jpg" alt="">
+          </div>
+          <h1 class="tituloH1">¿Cómo lo puedo hacer?</h1>
+          <p class="Text">
+            It is a long established fact that a reader will be distracted
+            by the readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using 'Content
+            here, content here', making it look like readable English.
+          </p>
+          <br>
+          <button class="btnText button2">Quiero saber mas</button>
+        </div>
+      </div>
+      <div id="carrousel">
+      </div>
+    </section>
+
+    <section id="tab2">
+      <div class="cover">
+        <div class="containerGeneral">
+          <h1> Queremos ayudarte a resolver tus inquietudes <h1>
+              <div class="faqs">
+                <h3>¿Cómo puedo empezar?</h3>
+                <p>It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.</p>
               </div>
+
+              <div class="faqs">
+                <h3>¿Tiene algún costo?</h3>
+                <p>Many
+                  desktop publishing packages and web page editors now use Lorem
+                  Ipsum as their default model text, and a search for 'lorem
+                  ipsum' will uncover many web sites still in their infancy.</p>
+              </div>
+
+              <div class="faqs">
+                <h3>¿Qué tipo de imágenes debo usar?</h3>
+                <p>Various versions have evolved over the years, sometimes by
+                  accident, sometimes on purpose (injected humour and the like).</p>
+              </div>
+
+              <div class="faqs">
+                <h3>Consejos útiles para imprimir las imágenes</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book. It has
+                  survived not only five centuries, but also the leap into
+                  electronic typesetting, remaining essentially unchanged.</p>
+              </div>
+
+              <div class="ContenedoBtnFrase">
+                <h3>
+                  Hoy podes empezar a crear tus mejores álbumes. <br> Sólo tenes que haces clic aquí!!! <br>
+                </h3>
+                <i class="far fa-hand-point-down"></i>
+                <div>
+                  <button class="btnHome button1">Empezar ahora mismo</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab3">
+      <div class="cover">
+        <div class="containerGeneral">
+          <h1> Nuestro objetivo </h1>
+          <div class="containerNosotros">
+            <div class="nosotrosTituloParrafo">
+              <h3>Que buscamos con "Tus Fotos a Libro?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, voluptates! Amet veniam, ipsa
+                adipisci sit, itaque officia error blanditiis dolore, quidem modi assumenda numquam quibusdam! Sunt
+                corporis ad nesciunt porro? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus,
+                voluptates! Amet veniam, ipsa adipisci sit, itaque officia error blanditiis dolore, quidem modi
+                assumenda numquam quibusdam! Sunt corporis ad nesciunt porro?</p>
+              <input type="button" value="Empezar" />
+            </div>
+            <div class="nosotrosImagen">
+              <img src="Imagenes/Recuerdo1.jpg" alt="">
             </div>
           </div>
-        </div>
-      </section>
-      
-      <section id="tab3">
-        <div class="cover">
-          <div class="containerGeneral">
-            <h1> Nuestro objetivo </h1>
-            <div class="containerNosotros">
-              <div class="nosotrosTituloParrafo">
-                <h3>Que buscamos con "Tus Fotos a Libro?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, voluptates! Amet veniam, ipsa adipisci sit, itaque officia error blanditiis dolore, quidem modi assumenda numquam quibusdam! Sunt corporis ad nesciunt porro? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, voluptates! Amet veniam, ipsa adipisci sit, itaque officia error blanditiis dolore, quidem modi assumenda numquam quibusdam! Sunt corporis ad nesciunt porro?</p>
-                <input type="button" value="Empezar" />
-              </div>
-              <div class="nosotrosImagen">
-                <img src="Imagenes/Recuerdo1.jpg" alt="">
-              </div>
-            </div>
-            <div class="ContenedoBtnFrase">
-              <h3>
-                Todo momento especial, <br>vale la pena revivirlo dos veces. <br>
-              </h3>
-            </div>
-            
+          <div class="ContenedoBtnFrase">
+            <h3>
+              Todo momento especial, <br>vale la pena revivirlo dos veces. <br>
+            </h3>
           </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="tab4">
-        <div class="cover">
-          <div class="containerGeneral">
-            <h1> Dejanos tus inquietudes </h1>
-            <form class="formulario" action="/Formulario" method="post">
-              <ul class="form__ul">
-               <li class="form__li">
-                 <label class="form__label" for="name">Dinos tu nombre:</label>
-                 <input class="form__input" type="text" id="name" name="user_name">
-               </li>
-               <li class="form__li">
-                 <label class="form__label" for="mail">Coloca un email para que te respondamos:</label>
-                 <input class="form__input"  type="email" id="mail" name="user_mail">
-               </li>
-               <li class="form__li">
-                 <label class="form__label" for="msg">Dejanos tu consulta:</label>
-                 <textarea class="form__textarea" id="msg" name="user_message"></textarea>
-               </li>
-              </ul>
+    <section id="tab4">
+      <div class="cover">
+        <div class="containerGeneral">
+          <h1> Dejanos tus inquietudes </h1>
+          <form id="formulario" action="/Formulario" method="post">
+            <ul class="form__ul">
+              <li class="form__li">
+                <label class="form__label" for="name">Dinos tu nombre:</label>
+                <input class="form__input" type="text" id="name" name="name">
+              </li>
+              <li class="form__li">
+                <label class="form__label" for="mail">Coloca un email para que te respondamos:</label>
+                <input class="form__input" type="email" id="mail" name="mail">
+              </li>
+              <li class="form__li">
+                <label class="form__label" for="msg">Dejanos tu consulta:</label>
+                <textarea class="form__textarea" id="msg" name="message"></textarea>
+              </li>
+            </ul>
 
-              <div class="button">
-                <button type="submit">Envíe su mensaje</button>
-              </div>
-             </form>
-          </div>
+            <div class="button">
+              <button onclick="handleSubmit(event)"  type="submit">Envíe su mensaje</button>
+              <a href="mailto:estebanlissandrello@gmail.com" id="mailto"></a>
+            </div>
+          </form>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="tab5">
-        <div class="cover">
-          <div class="containerGeneral tituloEmpezar">
+    <section id="tab5" class="tab5">
+      <div class="cover">
+        <!-- containerGeneral tituloEmpezar -->
+        <div class="containerConfiguracion">
+          <div class="containerInput">
             <div class="configuration">
-              <h1>1. Seleccioná la orientación</h1>
+              <h1>1. Formato</h1>
               <p>Aquí debes seleccionar la orientación de página.</p>
               <div class="select">
                 <select id="formato" name="formato" action="" class="option" required>
                   <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="Vertical">Vertical</option>               
-                    <option value="Horizontal">Horizontal</option>
+                  <option value="Vertical">Vertical</option>
+                  <option value="Horizontal">Horizontal</option>
                 </select>
               </div>
             </div>
             <div class="configuration">
-              <h1>2. Seleccioná la temática</h1>
+              <h1>2. Fondo</h1>
               <p>Selecciona el fondo de la página.</p>
               <div class="select">
                 <select id="fondo" name="fondo" action="" class="option" required>
                   <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="Dinos">Dinos</option>
-                    <option value="Invierno">Invierno</option>  
-                    <option value="Baby">Baby</option>
-                    <option value="Playroom">Playroom</option>        
+                  <option value="Dinos">Dinos</option>
+                  <option value="Invierno">Invierno</option>
+                  <option value="Summer">Summer</option>
+                  <option value="Madera">Madera</option>
                 </select>
               </div>
             </div>
             <div class="configuration">
-              <h1>3. Seleccioná la cantidad de fotos dentro de la pagina</h1>
-              <p>Aquí debes seleccionar la orientación de tu Foto Libro.</p>
+              <h1>3. Fotos</h1>
+              <p>Selecciona cuantas fotos quieres por página.</p>
               <div class="select">
                 <select id="photo" name="photo" action="" class="option" required>
                   <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="Foto1">1 foto en pagina</option>
-                    <option value="Foto2">2 foto en pagina</option> 
-                    <option value="Foto3">3 foto en pagina</option>
-                    <option value="Foto4">4 foto en pagina</option>              
+                  <option value="1">1 Foto</option>
+                  <option value="2">2 Foto</option>
+                  <option value="3">3 Foto</option>
+                  <option value="4">4 Foto</option>
                 </select>
               </div>
-              <br>
-              <div class="btnGeneral">
-                <button onclick="btnPaso2()" class="btnText">Ir al paso 2</a>
-              </div>
-            </div>            
+            </div>
           </div>
+
+          <div class="containerIframe">
+            <div class="iframeStyle">
+              <iframe allowfullscreen src="" frameborder="0" id="plantillaPaso2"
+                style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+            </div>
+          </div>
+
+          <div class="containerBtn">
+            <div class="btnGeneral">
+              <button onclick="formatoPlantilla()" class="btnText">Actualizar</button>
+              <br>
+              <br>
+              <button onclick="exportar()" class="btnText">Exportar</button>
+            </div>
+
+          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id=""tab6>
-       
-      </section>
-    </main>
+    <section id="tab6">
 
-    <script src="./JS/Header.js"></script>
-    <script src="./JS/Plantilla.js"></script>
-    <script src="./JS/SubirImagenes.js"></script>
+    </section>
+  </main>
 
-  </body>
-  <footer></footer>
+  <script src="./JS/Header.js"></script>
+  <script src="./JS/Plantilla.js"></script>
+  <script src="./JS/SubirImagenes.js"></script>
+  <script src="./JS/Paso2.js"></script>
+  <script src="./JS/Email.js"></script>
+  <script src="./JS/Scripts.js"></script>
+
+</body>
+<footer></footer>
+
 </html>
