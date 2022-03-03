@@ -9,10 +9,9 @@
   --FontSecondary: "Roboto", "Ubuntu";
 }
 
-/* .bodyPlantilla{
-  width: 100%;
-  height: auto;
-} */
+/* 
+PLANTILLA
+*/
 
 .plantillavertical {
   width: 100%;
@@ -27,10 +26,15 @@
   position: absolute;
 }
 
+
+/* 
+FOTOS
+*/
+
 .containerFotos{
-  transform: scale(0.9);
+  transform: scale(1);
   height: auto;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .fotos img{
@@ -40,11 +44,17 @@
   border-radius: 2mm;
   border: 15px solid white;
   object-fit: cover;
+  object-position: center;
 }
 
 .fotosV img {
   width: 80mm;
   height: 110mm;
+}
+
+.fotosVgrande img {
+  width: 130mm;
+  height: 170mm;
 }
 
 .fotosH img {
@@ -55,6 +65,22 @@
 .fotoV1 img {
   left: 70px;
   top: 70px;
+  /* object-fit: cover; */
+  /* object-position: center; */
+}
+
+.fotoV1a img {
+  left: 150px;
+  top: 170px;
+  object-fit: cover;
+  object-position: center;
+  transform: rotate(-7deg);
+}
+
+.fotoH1 img {
+  left: 53px;
+  top: 36px;
+  transform: rotate(1deg);
   object-fit: cover;
   object-position: center;
 }
@@ -67,17 +93,25 @@
   object-position: center;
 }
 
+.fotoH2 img {
+  left: 64px;
+  top: 558px;
+  transform: rotate(-3deg);
+  object-fit: cover;
+  object-position: center;
+}
+
 .fotoV3 img {
   left: 70px;
-  top: 575px;
+  top: 515px;
   transform: rotate(-3deg);
   object-fit: cover;
   object-position: center;
 }
 
 .fotoH3 img {
-  left: 90px;
-  top: 503px;
+  left: 54px;
+  top: 515px;
   transform: rotate(-7deg);
   object-fit: cover;
   object-position: center;
@@ -85,11 +119,16 @@
 
 .fotoV4 img {
   left: 424px;
-  top: 580px;
+  top: 500px;
   transform: rotate(3deg);
   object-fit: cover;
   object-position: center;
 }
+
+
+/* 
+INPUT
+*/
 
 .inputFoto {
   width: 80mm;
@@ -108,6 +147,20 @@
   top: 520px;
 }
 
+.input1a {
+  position: absolute;
+  left: 209px;
+  top: 866px;
+  transform: rotate(-7deg);
+}
+
+.inputH1 {
+  position: absolute;
+  transform: rotate(1deg);
+  left: 64px;
+  top: 504px;
+}
+
 .input2 {
   position: absolute;
   left: 443px;
@@ -115,28 +168,33 @@
   transform: rotate(-7deg);
 }
 
+.inputH2 {
+  position: absolute;
+  transform: rotate(-3deg);
+  left: 93px;
+  top: 1035px;
+}
+
 .input3 {
   position: absolute;
   transform: rotate(-3deg);
   left: 93px;
-  top: 1080px;
+  top: 1025px;
 }
 
 .inputH3 {
   position: absolute;
   transform: rotate(-7deg);
-  left: 140px;
-  top: 1048px;
+  left: 230px;
+  top: 1041px;
 }
 
 .input4 {
   position: absolute;
-  top: 1100px;
+  top: 1023px;
   left: 422px;
   transform: rotate(3deg);
 }
-
-/* CONFIGURACIÓN GENERAL DE FOTOS */
 
 #inputFoto1 {
   display: none;
@@ -154,6 +212,14 @@
   display: none;
 }
 
+#inputFoto1a {
+  display: none;
+}
+
+/* 
+SPAN
+*/
+
 .containerSpan {
   position: absolute;
   background: transparent;
@@ -166,6 +232,11 @@
   height: 415px;
 }
 
+.containerSpanVa {
+  width: 491px;
+  height: 642px;
+}
+
 .containerSpanH {
   width: 637px;
   height: 433px;
@@ -176,7 +247,6 @@
   margin: auto;
   width: 302px;
   height: 415px;
-  /* border: 1px solid red; */
 }
 
 .fa-camera {
@@ -185,7 +255,6 @@
   color: silver;
   width: 100%;
   height: 100%;
-  /* border: 1px solid black; */
   z-index: 1;
   justify-content: center ;
   align-items: center !important;
@@ -204,9 +273,8 @@
   object-position: center;
 }
 
-/* CONFIGURACIÓN POR FOTOS 
-
-FOTO 1
+/* 
+POSICIONAMIENTO
 */
 
 .fotoVertical1{
@@ -219,7 +287,18 @@ FOTO 1
   left: 85px;
 }
 
-/* FOTO 2 */
+.positionFoto1a{
+  top: 185px;
+  left: 164px;
+  transform: rotate(-7deg);
+}
+
+.positionFotoH1{
+  left: 70px;
+  top: 53px;
+  transform: rotate(1deg);
+}
+
 
 .fotoVertical2{
   left: 0px;
@@ -232,20 +311,26 @@ FOTO 1
   transform: rotate(-7deg);
 }
 
+.positionFotoH2{
+  left: 80px;
+  top: 573px;
+  transform: rotate(-3deg);
+}
+
 .positionFoto3{
   left: 83px;
-  top: 649px;
+  top: 586px;
   transform: rotate(-3deg);
 }
 
 .positionFotoH3{
-  left: 107px;
-  top: 572px;
+  left: 70px;
+  top: 583px;
   transform: rotate(-7deg);
 }
 
 .positionFoto4{
   left: 438px;
-  top: 669px;
+  top: 586px;
   transform: rotate(3deg);
 }

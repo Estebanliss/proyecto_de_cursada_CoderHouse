@@ -20,6 +20,10 @@ $(document).on("click", "#span4", function(){
     $("#span4").css("opacity", 0);
 });
 
+$(document).on("click", "#span1a", function(){
+    $("#inputFoto1a").click();
+    $("#span1a").css("opacity", 0);
+});
 
 // LINK DE BOTONES
 $(document).ready(function () {
